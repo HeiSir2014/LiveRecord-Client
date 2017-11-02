@@ -1,0 +1,6 @@
+<div *ngIf="platform != null">
+  <label>平台: </label>
+  <input [(ngModel)]="platform.name" placeholder="请输入平台名称">
+</div>
+
+<button (click)="goBack()">Back</button>

@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+  <h2>
+    目前支持的平台
+  </h2>
+  <ul class="platforms">
+    <li *ngFor="let one of platforms" [class.selected]="one === selectedPlatform" (click)="onSelectPlatform(one)">
+      <span class="name">支持</span>{{one.name}}<img [src]="one.logo" alt="{{one.url}}" /> <!-- -->
+    </li>
+  </ul>
+  <span *ngIf="platforms == null">正在加载数据...</span>
+  <platform-detail [platform]="selectedPlatform"></platform-detail>
+ </div>
+<router-outlet>
+
+</router-outlet>

@@ -1,0 +1,5 @@
+<select>
+  <option *ngFor="let one of platforms" value="{{one.name}}">{{one.name}}</option>
+</select>
+
+<a class="platform" *ngFor="let one of platforms" [routerLink]="['/detail', one.id]">{{one.name}}</a>

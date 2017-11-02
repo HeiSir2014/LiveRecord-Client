@@ -1,0 +1,15 @@
+.platform
+{
+  display:block !important;
+  text-decoration:none;
+  width:10em;
+  color:orangered;
+  background-color:lightblue;
+  border-radius:.3em;
+  margin:.5em auto;
+  padding:.5em;
+  text-align:center;
+  line-height:2em;
+  font-weight:bold;
+  font-size:1.5em;
+}
